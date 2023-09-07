@@ -21,27 +21,35 @@
     <div>
         <p>Hi there! In case you couldn't tell, my name is Arish Imam.</p>
         <p> Here is a button that you can click: <button>Click Me!</button></p>
-        <h6>And here is a Registration Form, but <i>please</i> don't use it, because it doesn't work!:</h6>
+        <h6>And here is a Contact Form, but <i>please</i> don't use it, because it doesn't work!:</h6>
 
         <form action="/submit.php" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your First Name">
             <br>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your Last Name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="thing@something.com">
             <br>
 
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
             <br>
-
-            <input type="checkbox" id="terms" name="terms">
-            <label for="terms">Accept Terms and Conditions</label>
-            <br>
-
+            <label for="source">How did you find me?</label>
+            <select name="source" id="source">
+                <option value="family">Family</option>
+                <option value="friend">Friend</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="google">Google</option>
+                <option value="other">Other</option>
+            </select>
             <button type="submit">Submit</button>
         </form>   
     </div> 
