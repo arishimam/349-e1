@@ -3,70 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>Arish Imam</h1>
+    <div class="navbar">
+        <div class="logo">Arish Imam</div>
         <div class="links">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                    <a href="recipes.html">Recipes</a>
-                    <a href="random-facts.html">Random Facts</a>
-                </li>
-            </ul>
+          <a href="index.html">Home</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="random-facts.html">Random Facts</a>
+          <a href="contact-me.html">Contact Me</a>
         </div>
-    </div>
-    <div>
+      </div>
+    <div class="recipe-page">
         <h2>This page is dedicated to recipes I enjoy!</h2>
         <br>
-        <h4><u>Chocolate Cake</u></h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
+        <div class="recipe-card">
+            <div class="recipe-name">Chocolate Cake</div>
+            <div class="ingredients-quantity">
+                <div>Ingredients</div>
+                <div>Quantity</div>
+            </div>
+            <div class="ingredient-line">
+                <div>Flour</div>
+                <div>2 cups</div>
+            </div>
+            <div class="ingredient-line">
+                <div>Sugar</div>
+                <div>1 cup</div>
+            </div>
+            <div class="ingredient-line">
+                <div>Cocoa Powder</div>
+                <div>1/2 cup</div>
+            </div>
+            <div class="ingredient-line">
+                <div>Milk</div>
+                <div>1 cup</div>
+            </div>
+            <div class="ingredient-line">
+                <div>Eggs</div>
+                <div>2</div>
+            </div>
+        </div>
 
-            <tbody>
-                <tr>
-                    <td>Flour</td>
-                    <td>2 cups</td>
-                </tr>
-                <tr>
-                    <td>Sugar</td>
-                    <td>1 cup</td>
-                </tr>
-                <tr>
-                    <td>Cocoa Powder</td>
-                    <td>1/2 cup</td>
-                </tr>
-                <tr>
-                    <td>Milk</td>
-                    <td>1 cup</td>
-                </tr>
-                <tr>
-                    <td>Eggs</td>
-                    <td>2</td>
-                </tr>
-            </tbody>
+        <table class="ingredients">
+            <div>
+                <thead>
+                    <tr>
+                        <th colspan=2 class="recipe-title">Chocolate Cake</th>
+                    </tr>
+                    
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+            </div>
+
+            <div>
+                <tbody>
+                    <tr>
+                        <td>Flour</td>
+                        <td>2 cups</td>
+                    </tr>
+                    <tr>
+                        <td>Sugar</td>
+                        <td>1 cup</td>
+                    </tr>
+                    <tr>
+                        <td>Cocoa Powder</td>
+                        <td>1/2 cup</td>
+                    </tr>
+                    <tr>
+                        <td>Milk</td>
+                        <td>1 cup</td>
+                    </tr>
+                    <tr>
+                        <td>Eggs</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </div>
+            
         </table>
-        <h5>Instructions for Making Chocolate Cake</h5>
-        <ol>
-            <li>Preheat your oven to 350°F (175°C).</li>
-            <li>In a large mixing bowl, combine 2 cups of flour, 1 cup of sugar, and 1/2 cup of cocoa powder.</li>
-            <li>In a separate bowl, beat 2 eggs.</li>
-            <li>Add the beaten eggs and 1 cup of milk to the dry mixture.</li>
-            <li>Mix the ingredients thoroughly until smooth.</li>
-            <li>Grease a cake pan and pour the batter into it.</li>
-            <li>Bake for 30-35 minutes or until a toothpick inserted into the center comes out clean.</li>
-            <li>Remove the cake from the oven and allow it to cool.</li>
-            <li>Once cool, frost the cake with your choice of icing.</li>
-            <li>Enjoy your homemade chocolate cake!</li>
-        </ol>
-        <img src="chocolate-cake.jpg" alt="chocolate cake">
+        <div class = "instruction-title">Instructions for Making Chocolate Cake</div>
+        <div class="instructions">
+            <ol>
+                <li>Preheat your oven to 350°F (175°C).</li>
+                <li>In a large mixing bowl, combine 2 cups of flour, 1 cup of sugar, and 1/2 cup of cocoa powder.</li>
+                <li>In a separate bowl, beat 2 eggs.</li>
+                <li>Add the beaten eggs and 1 cup of milk to the dry mixture.</li>
+                <li>Mix the ingredients thoroughly until smooth.</li>
+                <li>Grease a cake pan and pour the batter into it.</li>
+                <li>Bake for 30-35 minutes or until a toothpick inserted into the center comes out clean.</li>
+                <li>Remove the cake from the oven and allow it to cool.</li>
+                <li>Once cool, frost the cake with your choice of icing.</li>
+                <li>Enjoy your homemade chocolate cake!</li>
+            </ol>
+        </div>
+        <img id="cake-pic" src="chocolate-cake.jpg" alt="chocolate cake">
     </div>
 </body>
 </html>
