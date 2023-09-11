@@ -1,10 +1,10 @@
 * {
     font: "Libre-Franklin", "Raleway";
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #E2F2ED;
-    
 }
 
 .logo {
@@ -74,45 +74,26 @@ a:active {
     align-items: center;
 }
 
-.ingredients-quantity {
-    width: 80%;
-    display: flex;
-    font-weight: bold;
-    font-size: 20px;
-    justify-content: space-evenly;
-}
-
-.ingredient-line {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    width: 80%;
-    justify-content:space-evenly;
-    line-height: 25px;
-}
 .recipe-title {
     text-decoration: underline;
     font-size: 22px;
-}
-
-.ingredients {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-
-    padding: 10px;
-    justify-content: center;
-}
-table {
-    width: 90%
-}
-
-th {
-    font-size: 20px;
     padding-bottom: 10px;
 }
 
+table{
+    width: 90%;
+    border: 1px solid;
+    border-radius: 10px;;
+    font-size: 20px;
+    padding: 10px;
+}
+
+thead {
+    margin-bottom: 50px;
+}
+td {
+    text-align: center;
+}
 .instruction-title {
     text-decoration: underline;
     font-weight: bold;
@@ -131,5 +112,45 @@ th {
     height: auto;
     border: solid #0B3A4C;
     border-radius: 10px;
+
+}
+
+
+.page-header {
+    font-style: italic;
+    font-size: 18px;
+    padding: 0 10px;
+}
+.random-page {
+    width: 100%;
+}
+.facts-title {
+    font-weight: bold;
+    font-size:22px;
+    padding: 0 10px;
+    text-decoration: underline;
+}
+
+.facts {
+    font-size: 20px;
+    margin-right: 10px;
+}
+li {
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    border-bottom: solid 1px #0B3A4C;
+    margin-left: -10px;
+}
+
+#flamingo-pic {
+    width:100%;
+    margin-top: 5px;
+    border: solid;
+    border-color:#0B3A4C;
+    border-width: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
 
 }

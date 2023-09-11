@@ -7,7 +7,8 @@ def count_unique_properties(file_path):
 
     # Regular expression to find css properties
     # Formatted as  " property: value; "
-    properties = re.findall(r'(\w+)\s*:', content)
+    # properties = re.findall(r'(\w+)\s*:', content)
+    properties = re.findall(r'([\w-]+)\s*:', content)
 
     unique_properties = set(properties)
 
