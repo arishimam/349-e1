@@ -196,18 +196,23 @@ ol li {
   font-stretch: expanded;
 }
 
+.facts ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
 .facts ul li {
-    margin: 0 10px;
-    border-bottom: 1px solid #0b3a4c;
+  margin: 0 10px;
+  border-bottom: 1px solid #0b3a4c;
 }
 
 .facts ul li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 .random-facts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #flamingo-pic {
   width: 98%;
