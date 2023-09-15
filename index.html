@@ -7,67 +7,69 @@
     <link rel = "stylesheet" href="css/style.css">
   </head>
   <body>
+
     <div class="navbar">
       <div class="logo">Arish Imam</div>
       <div class="links">
-        <a href="index.html">Home</a>
-        <a href="recipes.html">Recipes</a>
-        <a href="random-facts.html">Random Facts</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="random-facts.html">Random Facts</a></li>
+        </ul>
       </div>
     </div>
 
     <div>
-      <p>Hi there! In case you couldn't tell, my name is Arish Imam.</p>
-      <p>Here is a button that you can click: <button>Click Me!</button></p>
-      <h6>
-        And here is a Contact Form, but <i>please</i> don't use it, because it
-        doesn't work!:
-      </h6>
+      <div class="main-section">
+        <div class="page-header">Hi there! In case you couldn't tell, my name is Arish Imam. </div>
+        <br>
+        <div>Feel free to browse my website to see some recipes I enjoy and some interesting facts!</div>
+      </div>
 
-      <form action="/submit.php" method="post">
-        <label for="firstname">First Name:</label>
-        <input
-          type="text"
-          id="firstname"
-          name="firstname"
-          placeholder="Enter your First Name"
-        />
-        <br />
-
-        <label for="lastname">Last Name:</label>
-        <input
-          type="text"
-          id="lastname"
-          name="lastname"
-          placeholder="Enter your Last Name"
-        />
-        <br />
-        <label for="email">Email:</label>
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="thing@something.com"
-        />
-        <br />
-
-        <input type="radio" id="male" name="gender" value="male" />
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label>
-        <input type="radio" id="other" name="gender" value="other" />
-        <label for="other">Other</label>
-        <br />
-        <label for="source">How did you find me?</label>
-        <select name="source" id="source">
-          <option value="family">Family</option>
-          <option value="friend">Friend</option>
-          <option value="linkedin">LinkedIn</option>
-          <option value="google">Google</option>
-          <option value="other">Other</option>
-        </select>
-        <button type="submit">Submit</button>
-      </form>
+      
+      <div class="contact-form">
+        
+        <form action="index.html" method="get">
+          <div class="name">
+            <div class="form-header">Contact Me:</div>
+            <div>
+              <label for="firstname">First Name:</label>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="Enter your First Name"
+              />
+            </div>
+            <div>
+              <label for="lastname">Last Name:</label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Enter your Last Name"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="thing@something.com"
+            />
+          </div>
+          <div>
+            <label for="message"> Message:</label>
+            <textarea id="message" name="message" placeholder="Write something..."></textarea>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      
     </div>
   </body>
 </html>

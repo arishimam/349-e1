@@ -1,129 +1,230 @@
 * {
-    font: "Libre-Franklin", "Raleway";
-    scroll-behavior: smooth;
+  font-family: "Libre-Franklin", "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #E2F2ED;
+  background-color: #e2f2ed;
+  line-height: 1;
+  width: 100%;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1e5366;
+  padding: 10px;
+  align-items: center;
 }
 
 .logo {
-    font-size: 18px;
-    margin: 10px;
-    color: #F0F8FF;
-    margin-left: 20px;
-}
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background: #1E5366;
-    color:#F0F8FF
+  color: #f0f8ff;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-.links {
-    display: flex;
-    text-decoration: none; 
-    color: #F0F8FF;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    margin-right: 20px;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-a {
-    text-decoration: none;
-    padding: 5px;
-    font-size: 15px;
-    height: auto;
-    color: #F0F8FF;
+ul li {
+  float: left;
+  border-right: 1px solid #e2f2ed;
+  padding: 10px 6px;
 }
 
-a:visited {
-    text-decoration: none;
-    color: #F0F8FF
-}
-a:hover {
-    color: #0B3A4C;
+ul li a {
+  text-decoration: none;
+  color: #f0f8ff;
+  text-align: center;
+  font-size: 14px;
 }
 
-a:active {
-    color: black;
-    text-decoration: underline;
+ul li a.active {
+  background-color: green;
 }
+
+ul li a:active {
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: darkgray;
+}
+
+ul li:last-child {
+  border-right: none;
+}
+
+/* Home Page */
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background-color: lightgray;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.page-header {
+  font-style: italic;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #1e5366;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.form-header {
+  align-self: center;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+form {
+  padding: 15px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+div label {
+  font-weight: 600;
+  padding-bottom: 3px;
+  letter-spacing: 0.5px;
+}
+
+div input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+div textarea {
+  padding: 8px;
+  height: 150px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+form button {
+  height: 40px;
+  width: 200px;
+  background-color: orange;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 10px;
+  justify-content: center;
+  align-self: center;
+}
+
+/* Recipe Page */
 
 .recipe-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.recipe-name {
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: underline;
-    margin: 5px;
-}
-.recipe-card {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    border: 2px solid black;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .recipe-title {
-    text-decoration: underline;
-    font-size: 22px;
-    padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 22px;
+  border-bottom: 2px solid black;
 }
 
-table{
-    width: 90%;
-    border: 1px solid;
-    border-radius: 10px;;
-    font-size: 20px;
-    padding: 10px;
+table {
+  width: 90%;
+  border: 2px solid;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-thead {
-    margin-bottom: 50px;
-}
 td {
-    text-align: center;
-}
-.instruction-title {
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 20px;
-    padding-top:30px;
+  text-align: center;
 }
 
 .instructions {
-    display: flex;
-    width: 100%;
-    font-size: 20px;
+  padding: 20px;
+}
+
+.instruction-title {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+ol {
+  padding: 0 10px 0 25px;
+}
+
+ol li {
+  padding-bottom: 5px;
 }
 
 #cake-pic {
-    width: 100%;
-    height: auto;
-    border: solid #0B3A4C;
-    border-radius: 10px;
-
+  width: 98%;
+  height: auto;
+  border: 2px solid #0b3a4c;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
+/* Random facts page */
+
+.facts-title {
+  font-weight: bold;
+  font-stretch: expanded;
+}
+
+.facts ul li {
+    margin: 0 10px;
+    border-bottom: 1px solid #0b3a4c;
+}
+
+.facts ul li:last-child {
+    border-bottom: none;
+}
+.random-facts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#flamingo-pic {
+  width: 98%;
+  height: auto;
+  border: 2px solid #0b3a4c;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* 
 
 .page-header {
     font-style: italic;
     font-size: 18px;
     padding: 0 10px;
 }
-.random-page {
-    width: 100%;
-}
+
 .facts-title {
     font-weight: bold;
     font-size:22px;
@@ -144,6 +245,7 @@ ul li {
 
 #flamingo-pic {
     width:100%;
+    max-width: 900px;
     margin-top: 5px;
     border: solid;
     border-color:#0B3A4C;
@@ -153,4 +255,4 @@ ul li {
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
 
-}
+} */
