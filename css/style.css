@@ -71,10 +71,10 @@ ul li:last-child {
 /* Home Page */
 
 .home-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
 }
 .main-section {
   display: flex;
@@ -88,11 +88,12 @@ ul li:last-child {
 
 .page-header {
   font-style: italic;
-  padding: 20px 10px 5px 10px;
+  padding: 20px 10px;
 }
 
 .page-subheader {
-  padding: 0px 10px 15px 10px;
+  font-style: normal;
+  padding: 10px 10px 0;
 }
 
 .contact-form {
@@ -102,7 +103,7 @@ ul li:last-child {
   border: 2px solid #1e5366;
   border-radius: 10px;
   margin: 20px;
-  max-width: 600px;
+  max-width: 450px;
 }
 
 .form-header {
@@ -170,10 +171,9 @@ form button {
 
 table {
   width: 90%;
-  max-width: 500px;
+  max-width: 450px;
   border: 2px solid;
   border-radius: 10px;
-  font-size: 20px;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -188,6 +188,7 @@ td {
 
 .instructions {
   padding: 20px;
+  max-width: 600px;
 }
 
 .instruction-title {
@@ -230,9 +231,11 @@ ol li {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  margin: 0 20px;
+  padding: 0 20px;
 }
 .facts ul li {
-  margin: 0 10px;
+  /* margin: 0 10px; */
   border-bottom: 1px solid #0b3a4c;
 }
 
@@ -249,7 +252,7 @@ ol li {
 #flamingo-pic {
   width: 98%;
   height: auto;
-  max-width: 800px;
+  max-width: 700px;
   border-top: solid;
   border-right: solid;
   border-bottom: solid;
@@ -261,4 +264,81 @@ ol li {
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   margin-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Navbar and general text size */
+  * {
+    font-size: 22px;
+  }
+
+  .logo {
+    font-size: 28px;
+    padding-left: 30px;
+  }
+
+  ul {
+    padding-right: 20px;
+  }
+
+  ul li a {
+    font-size: 20px;
+    padding: 0 5px 0 5px;
+  }
+  /* Contact Form Header */
+  .form-header {
+    font-size: 24px;
+  }
+
+  table {
+    max-width: 550px;
+  }
+
+  /* Recipe Instructions */
+  .recipe-title {
+    font-size: 26px;
+  }
+
+  .instruction-title {
+    font-size: 24px;
+  }
+  .instructions {
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Navbar and general text size */
+  * {
+    font-size: 26px;
+  }
+
+  .logo {
+    font-size: 32px;
+    padding-left: 40px;
+  }
+
+  ul li a {
+    font-size: 24px;
+  }
+  /* Contact Form Header */
+  .form-header {
+    font-size: 28px;
+  }
+  /* Recipe Instructions */
+  .recipe-title {
+    font-size: 28px;
+  }
+
+  .instruction-title {
+    font-size: 26px;
+  }
+
+  .instructions {
+    max-width: 900px;
+  }
+
+  #flamingo-pic {
+    max-width: 900px;
+  }
 }
